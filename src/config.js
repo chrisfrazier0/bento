@@ -13,7 +13,7 @@ const CONFIG = {
   // General
   name: 'Chris',
   imageBackground: false,
-  openInNewTab: true,
+  openInNewTab: false,
   twelveHourFormat: true,
 
   // Greetings
@@ -55,77 +55,77 @@ const CONFIG = {
       id: '1',
       name: 'Github',
       icon: 'github',
-      link: 'https://github.com/',
+      link: 'https://github.com/chrisfrazier0',
     },
     {
       id: '2',
-      name: 'Mail',
-      icon: 'mail',
-      link: 'https://mail.protonmail.com/',
-    },
-    {
-      id: '3',
-      name: 'Todoist',
-      icon: 'trello',
-      link: 'https://todoist.com',
-    },
-    {
-      id: '4',
-      name: 'Calendar',
-      icon: 'calendar',
-      link: 'https://calendar.google.com/calendar/r',
-    },
-    {
-      id: '5',
-      name: 'Reddit',
-      icon: 'glasses',
-      link: 'https://reddit.com',
-    },
-    {
-      id: '6',
-      name: 'Odysee',
-      icon: 'youtube',
-      link: 'https://odysee.com/',
-    },
-  ],
-
-  secondButtonsContainer: [
-    {
-      id: '1',
-      name: 'Music',
-      icon: 'headphones',
-      link: 'https://open.spotify.com',
-    },
-    {
-      id: '2',
-      name: 'twitter',
-      icon: 'twitter',
-      link: 'https://twitter.com/',
-    },
-    {
-      id: '3',
-      name: 'bot',
-      icon: 'bot',
-      link: 'https://discord.com/app',
-    },
-    {
-      id: '4',
       name: 'Amazon',
       icon: 'shopping-bag',
       link: 'https://amazon.com/',
     },
     {
+      id: '3',
+      name: 'YNAB',
+      icon: 'piggy-bank',
+      link: 'https://app.ynab.com',
+    },
+    {
+      id: '4',
+      name: 'Robinhood',
+      icon: 'feather',
+      link: 'https://robinhood.com',
+    },
+    {
       id: '5',
-      name: 'Hashnode',
-      icon: 'pen-tool',
-      link: 'https://hashnode.com/',
+      name: 'YouTube',
+      icon: 'youtube',
+      link: 'https://youtube.com/',
     },
     {
       id: '6',
-      name: 'Figma',
-      icon: 'figma',
-      link: 'https://figma.com/',
+      name: 'Netflix',
+      icon: 'tv',
+      link: 'https://netflix.com/',
+    }
+  ],
+
+  secondButtonsContainer: [
+    {
+      id: '1',
+      name: 'Discord',
+      icon: 'bot',
+      link: 'https://discord.com/app',
     },
+    {
+      id: '2',
+      name: 'Facebook',
+      icon: 'facebook',
+      link: 'https://facebook.com/',
+    },
+    {
+      id: '3',
+      name: 'Twitter',
+      icon: 'twitter',
+      link: 'https://twitter.com/',
+    },
+    {
+      id: '4',
+      name: 'LinkedIn',
+      icon: 'linkedin',
+      link: 'https://linkedin.com/in/chrisfrazier0',
+    },
+    {
+      id: '5',
+      name: 'Instagram',
+      icon: 'instagram',
+      link: 'https://instagram.com/',
+    },
+    {
+      id: '6',
+      name: 'Stack Overflow',
+      icon: 'layers',
+      link: 'https://stackoverflow.com/',
+    }
   ],
 
   // ┬  ┬┌─┐┌┬┐┌─┐
@@ -139,20 +139,20 @@ const CONFIG = {
       id: '1',
       links: [
         {
-          name: 'Inspirational',
-          link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+          name: 'Trance',
+          link: 'https://www.youtube.com/watch?v=NGsjwNsXE0w',
         },
         {
-          name: 'Classic',
-          link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+          name: 'Lofi',
+          link: 'https://www.youtube.com/watch?v=jfKfPfyJRdk',
         },
         {
-          name: 'Oldies',
-          link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+          name: 'DC101',
+          link: 'https://www.iheart.com/live/dc101-2525/',
         },
         {
-          name: 'Rock',
-          link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+          name: 'Classical',
+          link: 'https://www.youtube.com/watch?v=bwZUs26HZI8',
         },
       ],
     },
@@ -161,20 +161,20 @@ const CONFIG = {
       id: '2',
       links: [
         {
-          name: 'Linkedin',
-          link: 'https://www.linkedin.com',
+          name: 'OGS',
+          link: 'https://online-go.com/',
         },
         {
-          name: 'Dribbble',
-          link: 'https://www.dribbble.com',
+          name: 'Lichess',
+          link: 'https://lichess.org',
         },
         {
-          name: 'Trello',
-          link: 'https://www.trello.com',
+          name: 'Discord',
+          link: 'https://discord.com/app',
         },
         {
-          name: 'Slack',
-          link: 'https://www.slack.com',
+          name: 'News',
+          link: 'https://www.reddit.com/r/technews/',
         },
       ],
     },
@@ -183,24 +183,24 @@ const CONFIG = {
   // Second Links Container
   secondListsContainer: [
     {
-      icon: 'binary',
+      icon: 'search',
       id: '1',
       links: [
         {
-          name: 'Spotify',
-          link: 'https://www.spotify.com',
+          name: 'Google',
+          link: 'https://google.com',
         },
         {
-          name: 'Reddit',
-          link: 'https://www.reddit.com',
+          name: 'Bing',
+          link: 'https://bing.com',
         },
         {
-          name: 'Hashnode',
-          link: 'https://www.hashnode.com',
+          name: 'Yahoo',
+          link: 'https://yahoo.com',
         },
         {
-          name: 'Pocket',
-          link: 'https://www.pocket.com',
+          name: 'DuckDuckGo',
+          link: 'https://duckduckgo.com',
         },
       ],
     },
@@ -209,20 +209,20 @@ const CONFIG = {
       id: '2',
       links: [
         {
-          name: 'Front',
-          link: 'https://www.reddit.com/r/Frontend/',
-        },
-        {
-          name: 'Rust',
-          link: 'https://www.reddit.com/r/rust/',
-        },
-        {
-          name: 'Go',
-          link: 'https://www.reddit.com/r/golang/',
+          name: 'Profile',
+          link: 'https://github.com/chrisfrazier0',
         },
         {
           name: 'Repos',
-          link: 'https://github.com/migueravila',
+          link: 'https://github.com/chrisfrazier0?tab=repositories',
+        },
+        {
+          name: 'Gists',
+          link: 'https://gist.github.com/chrisfrazier0',
+        },
+        {
+          name: 'API',
+          link: 'https://docs.github.com/en/rest',
         },
       ],
     },
