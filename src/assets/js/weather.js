@@ -15,7 +15,8 @@ weather.temperature = {
 var tempUnit = CONFIG.weatherUnit;
 
 const KELVIN = 273.15;
-const key = `${CONFIG.weatherKey}`;
+// const key = `${CONFIG.weatherKey}`;
+const key = localStorage.getItem('weatherKey');
 setPosition();
 
 function setPosition(position) {
@@ -38,6 +39,10 @@ function setPosition(position) {
 }
 
 function getWeather(latitude, longitude) {
+	if (!key) {
+		throw Error('missing weatherKey: localStorage.setItem(\'weatherKey\', \'\');');
+	}
+
 	let api = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&lang=${CONFIG.language}&appid=${key}`;
 	fetch(api)
 		.then(function(response) {
