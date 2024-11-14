@@ -147,12 +147,12 @@ const CONFIG = {
           link: 'https://www.youtube.com/watch?v=jfKfPfyJRdk',
         },
         {
-          name: 'Classical',
-          link: 'https://www.youtube.com/watch?v=bwZUs26HZI8',
-        },
-        {
           name: 'DC101',
           link: 'https://www.iheart.com/live/dc101-2525/',
+        },
+        {
+          name: 'Classical',
+          link: 'https://www.youtube.com/watch?v=bwZUs26HZI8',
         },
       ],
     },
