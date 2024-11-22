@@ -173,8 +173,8 @@ const CONFIG = {
           link: 'https://discord.com/app',
         },
         {
-          name: 'News',
-          link: 'https://www.reddit.com/r/technews/',
+          name: 'Paint',
+          link: 'https://jspaint.app/',
         },
       ],
     },
