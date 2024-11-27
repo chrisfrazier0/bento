@@ -139,8 +139,8 @@ const CONFIG = {
       id: '1',
       links: [
         {
-          name: 'Trance',
-          link: 'https://www.youtube.com/watch?v=NGsjwNsXE0w',
+          name: 'Jazz',
+          link: 'https://www.youtube.com/watch?v=HuFYqnbVbzY',
         },
         {
           name: 'Lofi',
