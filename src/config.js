@@ -73,7 +73,7 @@ const CONFIG = {
       id: '4',
       name: 'Twitter',
       icon: 'twitter',
-      link: 'https://x.com/',
+      link: 'https://pro.x.com/',
     },
     {
       id: '5',
