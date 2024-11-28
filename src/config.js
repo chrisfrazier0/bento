@@ -71,9 +71,9 @@ const CONFIG = {
     },
     {
       id: '4',
-      name: 'Robinhood',
-      icon: 'feather',
-      link: 'https://robinhood.com',
+      name: 'Twitter',
+      icon: 'twitter',
+      link: 'https://x.com/',
     },
     {
       id: '5',
