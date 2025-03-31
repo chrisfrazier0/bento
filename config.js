@@ -165,7 +165,7 @@ const CONFIG = {
           link: 'https://youtube.com',
         },
         {
-          name: 'Stack Overflow',
+          name: 'Overflow',
           link: 'https://stackoverflow.com',
         },
         {
