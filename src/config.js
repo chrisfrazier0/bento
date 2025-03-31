@@ -59,9 +59,9 @@ const CONFIG = {
     },
     {
       id: '2',
-      name: 'Amazon',
-      icon: 'shopping-bag',
-      link: 'https://amazon.com/',
+      name: 'Grok',
+      icon: 'bot',
+      link: 'https://grok.com',
     },
     {
       id: '3',
@@ -71,21 +71,21 @@ const CONFIG = {
     },
     {
       id: '4',
-      name: 'Twitter',
-      icon: 'twitter',
-      link: 'https://pro.x.com/',
+      name: 'Amazon',
+      icon: 'shopping-bag',
+      link: 'https://amazon.com',
     },
     {
       id: '5',
-      name: 'YouTube',
-      icon: 'youtube',
-      link: 'https://youtube.com/',
+      name: 'Twitter',
+      icon: 'twitter',
+      link: 'https://x.com',
     },
     {
       id: '6',
       name: 'Netflix',
       icon: 'tv',
-      link: 'https://netflix.com/',
+      link: 'https://netflix.com',
     }
   ],
 
@@ -100,13 +100,13 @@ const CONFIG = {
       id: '2',
       name: 'Facebook',
       icon: 'facebook',
-      link: 'https://facebook.com/',
+      link: 'https://facebook.com',
     },
     {
       id: '3',
       name: 'Twitter',
       icon: 'twitter',
-      link: 'https://twitter.com/',
+      link: 'https://twitter.com',
     },
     {
       id: '4',
@@ -118,13 +118,13 @@ const CONFIG = {
       id: '5',
       name: 'Instagram',
       icon: 'instagram',
-      link: 'https://instagram.com/',
+      link: 'https://instagram.com',
     },
     {
       id: '6',
       name: 'Stack Overflow',
       icon: 'layers',
-      link: 'https://stackoverflow.com/',
+      link: 'https://stackoverflow.com',
     }
   ],
 
@@ -139,16 +139,16 @@ const CONFIG = {
       id: '1',
       links: [
         {
-          name: 'Jazz',
-          link: 'https://www.youtube.com/watch?v=HuFYqnbVbzY',
-        },
-        {
           name: 'Lofi',
           link: 'https://www.youtube.com/watch?v=jfKfPfyJRdk',
         },
         {
           name: 'DC101',
           link: 'https://www.iheart.com/live/dc101-2525/',
+        },
+        {
+          name: 'Jazz',
+          link: 'https://www.youtube.com/watch?v=HuFYqnbVbzY',
         },
         {
           name: 'Classical',
@@ -161,12 +161,12 @@ const CONFIG = {
       id: '2',
       links: [
         {
-          name: 'OGS',
-          link: 'https://online-go.com/',
+          name: 'YouTube',
+          link: 'https://youtube.com',
         },
         {
-          name: 'Lichess',
-          link: 'https://lichess.org',
+          name: 'Overflow',
+          link: 'https://stackoverflow.com',
         },
         {
           name: 'Discord',
