@@ -24,6 +24,10 @@ function setPosition(position) {
 		if (CONFIG.trackLocation) {
 			console.error('Geolocation not available');
 		}
+		if (!key) {
+			console.error('No API key set for OpenWeatherMap. Please set one in localStorage with key "weatherKey". Example: localStorage.setItem(\'weatherKey\', \'your_api_key\');');
+			return;
+		}
 		getWeather(CONFIG.defaultLatitude, CONFIG.defaultLongitude);
 		return;
 	}
@@ -39,10 +43,6 @@ function setPosition(position) {
 }
 
 function getWeather(latitude, longitude) {
-	if (!key) {
-		throw Error('missing weatherKey: localStorage.setItem(\'weatherKey\', \'\');');
-	}
-
 	let api = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&lang=${CONFIG.language}&appid=${key}`;
 	fetch(api)
 		.then(function(response) {
