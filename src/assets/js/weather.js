@@ -20,13 +20,13 @@ const key = localStorage.getItem('weatherKey');
 setPosition();
 
 function setPosition(position) {
+	if (!key) {
+		console.error('No API key set for OpenWeatherMap. Please set one in localStorage with key "weatherKey". Example: localStorage.setItem(\'weatherKey\', \'your_api_key\');');
+		return;
+	}
 	if (!CONFIG.trackLocation || !navigator.geolocation) {
 		if (CONFIG.trackLocation) {
 			console.error('Geolocation not available');
-		}
-		if (!key) {
-			console.error('No API key set for OpenWeatherMap. Please set one in localStorage with key "weatherKey". Example: localStorage.setItem(\'weatherKey\', \'your_api_key\');');
-			return;
 		}
 		getWeather(CONFIG.defaultLatitude, CONFIG.defaultLongitude);
 		return;
