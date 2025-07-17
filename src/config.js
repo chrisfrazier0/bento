@@ -83,9 +83,9 @@ const CONFIG = {
     },
     {
       id: '6',
-      name: 'Netflix',
+      name: 'Prime Video',
       icon: 'tv',
-      link: 'https://netflix.com',
+      link: 'https://www.amazon.com/gp/video/storefront',
     }
   ],
 
@@ -165,16 +165,16 @@ const CONFIG = {
           link: 'https://youtube.com',
         },
         {
-          name: 'Overflow',
-          link: 'https://stackoverflow.com',
-        },
-        {
-          name: 'Discord',
-          link: 'https://discord.com/app',
+          name: 'Excalidraw',
+          link: 'https://excalidraw.com/',
         },
         {
           name: 'Paint',
           link: 'https://jspaint.app/',
+        },
+        {
+          name: 'Discord',
+          link: 'https://discord.com/app',
         },
       ],
     },
