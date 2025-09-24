@@ -16,10 +16,20 @@ var tempUnit = CONFIG.weatherUnit;
 
 const KELVIN = 273.15;
 // const key = `${CONFIG.weatherKey}`;
-const key = localStorage.getItem('weatherKey');
+
+// Function to get current API key
+const getWeatherKey = () => localStorage.getItem('weatherKey');
+
+// Function to refresh weather data
+const refreshWeather = () => {
+	setPosition();
+};
+
+// Initialize weather on page load
 setPosition();
 
 function setPosition(position) {
+	const key = getWeatherKey();
 	if (!key) {
 		console.error('No API key set for OpenWeatherMap. Please set one in localStorage with key "weatherKey". Example: localStorage.setItem(\'weatherKey\', \'your_api_key\');');
 		return;
@@ -43,6 +53,7 @@ function setPosition(position) {
 }
 
 function getWeather(latitude, longitude) {
+	const key = getWeatherKey();
 	let api = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&lang=${CONFIG.language}&appid=${key}`;
 	fetch(api)
 		.then(function(response) {
