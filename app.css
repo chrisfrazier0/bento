@@ -153,12 +153,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  white-space: nowrap;
 }
 
 #hour,
 #separator,
 #minutes {
-  font-size: var(--fg-primary);
+  font-size: min(var(--fg-primary), 8rem);
   font-weight: bolder;
   color: var(--fg);
 }
