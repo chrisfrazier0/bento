@@ -15,9 +15,24 @@
       -->
 
 	<body class="">
-		<button id="themeButton">
-			<i id="themeIcon" icon-name="moon"></i>
-		</button>
+		<div class="topButtons">
+			<button id="searchButton">
+				<i id="searchIcon" icon-name="search"></i>
+			</button>
+			<button id="themeButton">
+				<i id="themeIcon" icon-name="moon"></i>
+			</button>
+		</div>
+		<!-- Search Overlay -->
+		<div class="searchOverlay" id="searchOverlay">
+			<div class="searchContainer">
+				<div class="searchIcon">
+					<i icon-name="search"></i>
+				</div>
+				<input type="text" class="searchInput" id="searchInput" autocomplete="off" spellcheck="false">
+			</div>
+		</div>
+
 		<div class="container">
 			<!-- Clock and Greetings  -->
 
@@ -65,6 +80,7 @@
 		<script src="assets/js/time.js"></script>
 		<script src="assets/js/greeting.js"></script>
 		<script src="assets/js/weather.js"></script>
+		<script src="assets/js/search.js"></script>
 
 		<!-- Generators  -->
 		<script src="assets/js/buttons.js"></script>
