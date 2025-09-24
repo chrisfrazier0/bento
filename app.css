@@ -81,18 +81,36 @@ body {
   background-size: cover;
 }
 
-#themeButton {
+.topButtons {
   position: absolute;
-  margin: 2em 2em 0 0;
-  right: 0;
   top: 0;
+  right: 0;
+  margin: 1em 1em 0 0;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+#themeButton,
+#searchButton {
   color: var(--fg);
   border: none;
   cursor: pointer;
-  background-color: #00000000;
+  background-color: transparent;
+  padding: 0.25rem;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+  opacity: 0.3;
 }
 
-#themeIcon {
+#themeButton:hover,
+#searchButton:hover {
+  opacity: 1;
+  background-color: var(--cards);
+}
+
+#themeIcon,
+#searchIcon {
   width: 25px;
   height: 25px;
 }
@@ -183,6 +201,10 @@ body {
 .weatherIcon img {
   width: 70px;
   height: 70px;
+}
+
+.clickable-weather-icon {
+  cursor: pointer;
 }
 
 .weatherValue p {
@@ -327,6 +349,146 @@ body {
   color: var(--sfg);
 }
 
+/* S E A R C H  O V E R L A Y */
+
+.searchOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.searchOverlay.active {
+  display: flex;
+  opacity: 1;
+}
+
+.searchContainer {
+  background-color: var(--cards);
+  border-radius: 10px;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 85vw;
+  max-width: 800px;
+  height: 60px;
+}
+
+.searchIcon {
+  color: var(--fg);
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.searchInput {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  color: var(--fg);
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  height: 100%;
+}
+
+/* W E A T H E R  O V E R L A Y */
+
+.weatherOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.weatherOverlay.active {
+  display: flex;
+  opacity: 1;
+}
+
+.weatherContainer {
+  background-color: var(--cards);
+  border-radius: 10px;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 85vw;
+  max-width: 800px;
+  height: 60px;
+}
+
+.weatherOverlayIcon {
+  color: var(--fg);
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.weatherInput {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  color: var(--fg);
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  height: 100%;
+}
+
+.weatherInput::placeholder {
+  color: var(--sfg);
+  opacity: 0.7;
+}
+
+.weatherSaveButton {
+  background: transparent;
+  border: none;
+  color: var(--fg);
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+}
+
+.weatherSaveButton:hover {
+  background-color: var(--accent);
+  color: var(--sfg);
+}
+
+.weatherSaveButton i {
+  width: 18px;
+  height: 18px;
+}
+
 /* M E D I A - Q U E R I E S */
 
 @media only screen and (max-width: 68.75em) {
@@ -360,5 +522,37 @@ body {
     grid-gap: 3vw;
     padding-left: 100px;
     padding-right: 100px;
+  }
+
+  /* Search overlay responsive */
+  .searchContainer {
+    width: 85vw;
+    padding: 0.8rem 1.2rem;
+    height: 50px;
+  }
+
+  .searchInput {
+    font-size: 1rem;
+  }
+
+  /* Weather overlay responsive */
+  .weatherContainer {
+    width: 85vw;
+    padding: 0.8rem 1.2rem;
+    height: 50px;
+  }
+
+  .weatherInput {
+    font-size: 1rem;
+  }
+
+  .weatherSaveButton {
+    width: 35px;
+    height: 35px;
+  }
+
+  .weatherSaveButton i {
+    width: 16px;
+    height: 16px;
   }
 }
