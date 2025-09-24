@@ -59,21 +59,21 @@ const CONFIG = {
     },
     {
       id: '2',
-      name: 'ChatGPT',
+      name: 'Grok',
       icon: 'bot',
-      link: 'https://chatgpt.com',
+      link: 'https://grok.com',
     },
     {
       id: '3',
-      name: 'YNAB',
-      icon: 'piggy-bank',
-      link: 'https://app.ynab.com',
-    },
-    {
-      id: '4',
       name: 'Amazon',
       icon: 'shopping-bag',
       link: 'https://amazon.com',
+    },
+    {
+      id: '4',
+      name: 'Rumble',
+      icon: 'video',
+      link: 'https://rumble.com',
     },
     {
       id: '5',
