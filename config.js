@@ -59,9 +59,9 @@ const CONFIG = {
     },
     {
       id: '2',
-      name: 'Grok',
-      icon: 'bot',
-      link: 'https://grok.com',
+      name: 'YNAB',
+      icon: 'piggy-bank',
+      link: 'https://app.ynab.com',
     },
     {
       id: '3',
@@ -135,24 +135,24 @@ const CONFIG = {
   // First Links Container
   firstlistsContainer: [
     {
-      icon: 'music',
+      icon: 'bot',
       id: '1',
       links: [
         {
-          name: 'Lofi',
-          link: 'https://www.youtube.com/watch?v=jfKfPfyJRdk',
+          name: 'Lumo',
+          link: 'https://lumo.proton.me',
         },
         {
-          name: 'DC101',
-          link: 'https://www.iheart.com/live/dc101-2525/',
+          name: 'Grok',
+          link: 'https://grok.com',
         },
         {
-          name: 'Jazz',
-          link: 'https://www.youtube.com/watch?v=HuFYqnbVbzY',
+          name: 'ChatGPT',
+          link: 'https://chatgpt.com',
         },
         {
-          name: 'Classical',
-          link: 'https://www.youtube.com/watch?v=bwZUs26HZI8',
+          name: 'Gemini',
+          link: 'https://gemini.google.com/app',
         },
       ],
     },
@@ -161,16 +161,16 @@ const CONFIG = {
       id: '2',
       links: [
         {
-          name: 'YouTube',
-          link: 'https://youtube.com',
-        },
-        {
           name: 'Excalidraw',
           link: 'https://excalidraw.com/',
         },
         {
           name: 'Paint',
           link: 'https://jspaint.app/',
+        },
+        {
+          name: 'YouTube',
+          link: 'https://youtube.com',
         },
         {
           name: 'Discord',
