@@ -139,16 +139,16 @@ const CONFIG = {
       id: '1',
       links: [
         {
+          name: 'ChatGPT',
+          link: 'https://chatgpt.com',
+        },
+        {
           name: 'Lumo',
           link: 'https://lumo.proton.me',
         },
         {
           name: 'Grok',
           link: 'https://grok.com',
-        },
-        {
-          name: 'ChatGPT',
-          link: 'https://chatgpt.com',
         },
         {
           name: 'Gemini',
