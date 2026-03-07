@@ -59,9 +59,9 @@ const CONFIG = {
     },
     {
       id: '2',
-      name: 'YNAB',
-      icon: 'piggy-bank',
-      link: 'https://app.ynab.com',
+      name: 'Forgejo',
+      icon: 'folder-git-2',
+      link: 'https://git.frazier.software/chrisfrazier0',
     },
     {
       id: '3',
@@ -71,9 +71,9 @@ const CONFIG = {
     },
     {
       id: '4',
-      name: 'Rumble',
-      icon: 'video',
-      link: 'https://rumble.com',
+      name: 'Prime Video',
+      icon: 'tv',
+      link: 'https://www.amazon.com/gp/video/storefront',
     },
     {
       id: '5',
@@ -83,9 +83,9 @@ const CONFIG = {
     },
     {
       id: '6',
-      name: 'Prime Video',
-      icon: 'tv',
-      link: 'https://www.amazon.com/gp/video/storefront',
+      name: 'Netflix',
+      icon: 'tv-minimal-play',
+      link: 'https://netflix.com',
     }
   ],
 
@@ -173,8 +173,8 @@ const CONFIG = {
           link: 'https://youtube.com',
         },
         {
-          name: 'Discord',
-          link: 'https://discord.com/app',
+          name: 'Rumble',
+          link: 'https://rumble.com/',
         },
       ],
     },
